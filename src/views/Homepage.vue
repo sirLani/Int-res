@@ -1,12 +1,22 @@
 <template>
     <div>
-        <h1> Welcome to your Technical Test!</h1>
+        <!-- Display component as such passing any props you need to-->
+        <HomeSection1/>
+        <HomeNFTDisplay/>
     </div>
 </template>
 
 <script>
-export default {
+//Import your components
+import HomeSection1 from '@/components/homepage/HomeSection1.vue'
+import HomeNFTDisplay from '@/components/homepage/HomeNFTDisplay.vue'
 
+export default {
+  name: 'Homepage',
+  components: {
+    HomeSection1, // Add your components
+    HomeNFTDisplay
+  }
 }
 </script>
 

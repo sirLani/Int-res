@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <Homepage/>
-  </div>
+  <Navbar/>
+    <router-view/>
+  <Footer/> <!--You do not need to worry about the footer for this technical test. You can remove it if you'd like-->
 </template>
 
 <script>
-import Homepage from './views/Homepage.vue'
+import Footer from '@/components/layout/Footer.vue'
+import Navbar from '@/components/layout/Navbar.vue'
 
 export default {
   name: 'App',
   components: {
-    Homepage
+    Footer,
+    Navbar
   }
 }
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: Montserrat, Arial, Helvetica, sans-serif !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
