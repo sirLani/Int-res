@@ -1,21 +1,17 @@
 <template>
-<div>
+  <div>
     <!-- Here Lies the Footer: You do not need to worry about the footer for this technical test :))-->
-</div>
+  </div>
 </template>
 <script>
-
 export default {
-  name: 'Main-Footer',
-  components: {
+  name: "Main-Footer",
+  components: {},
+  data() {
+    return {};
   },
-  data () {
-    return {
-    }
-  },
-  methods: {
-  },
-}
+  methods: {},
+};
 </script>
-<style>
+<style scoped>
 </style>

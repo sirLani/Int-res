@@ -38,4 +38,8 @@ export default {
   max-width: 1440px;
   margin: 0 auto;
 }
+
+p {
+  font-size: 14px;
+}
 </style>
