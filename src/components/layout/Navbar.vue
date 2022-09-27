@@ -2,36 +2,51 @@
 <!-- We would like you to style it so it is responsive-->
 <!-- You do not need to make the dropdown menu on the "Featured Collections" -->
 <template>
-    <div>
-        <div class="navbar_container">
-            <img class="nav_banner" src="https://res.cloudinary.com/risidio/image/upload/v1633609222/RisidioMarketplace/gradienta-m_-1_v4hs5p.svg" alt="">
+  <div class="navbar_container">
+    <div class="container">
+      <ul class="mainNavbar">
+        <div class="nav-section left">
+          <img :src="logo" alt="risidio-logo" />
+          <li class="nav-item">Explore</li>
+          <li class="nav-item">
+            Featured Collections
+            <img src="../../assets/Icon-awesome-caret-down.svg" />
+          </li>
         </div>
-         <div class = "mainNavbar">
-            <ul>
-            <img :src="logo" alt="risidio-logo"/>
-                <li class="nav-item" > Gallery </li>
-                <li class="nav-item"> Featured Collections </li>
-                <li class="nav-item right"> How It Works</li>
-                <li class="nav-item"> about Risidio</li>
-                <li class="nav-item"> My NFTs</li>
-            </ul>
-         </div>
+        <div class="nav-section">
+          <li class="nav-item right">How It Works</li>
+          <li class="nav-item">about Risidio</li>
+          <li class="nav-item">My NFTs</li>
+        </div>
+      </ul>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
-  data () {
-    return{
-      logo: 'https://res.cloudinary.com/risidio/image/upload/v1633609248/RisidioMarketplace/Group_-1_fgpanq.svg',
-    }
-  }
-}
+  data() {
+    return {
+      logo: "https://res.cloudinary.com/dagzxzuv0/image/upload/v1664270498/logo_twenaj.svg",
+    };
+  },
+  components: {},
+};
 </script>
 
-<style scoped>
-.mainNavbar{
-  margin: 0 50px 50px 50px;
+<style  scoped>
+.navbar_container {
+  background-image: url("https://res.cloudinary.com/risidio/image/upload/v1633609222/RisidioMarketplace/gradienta-m_-1_v4hs5p.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #5154a1;
+  background-position: center;
+  padding: 1rem 0;
+}
+.mainNavbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 .mainNavbar ul {
   display: flex;
@@ -39,10 +54,20 @@ export default {
   text-decoration: none;
   align-items: center;
 }
-.risidio-logo{
-    align-self: flex-start;
+
+.nav-section {
+  display: flex;
+  align-items: center;
 }
-.nav-item{
+
+.left li {
+  font-weight: 500;
+}
+
+.left li img {
+  margin-left: 5px;
+}
+.nav-item {
   list-style-type: none;
   margin: 0 20px;
   color: white;
@@ -51,9 +76,9 @@ export default {
   cursor: pointer;
 }
 .right {
-    margin-left: auto;
+  margin-left: auto;
 }
-.nav_banner{
+.nav_banner {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -62,5 +87,4 @@ export default {
   object-fit: cover;
   z-index: -11;
 }
-
 </style>
