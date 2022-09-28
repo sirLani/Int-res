@@ -63,7 +63,7 @@ h1 {
 
 .hero-section {
   background-image: linear-gradient(180deg, #000000 0%, #0000003c 100%),
-    url("../../assets/bg.png");
+    url("../../../assets/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #5154a1;

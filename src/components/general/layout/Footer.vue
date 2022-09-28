@@ -52,8 +52,6 @@ export default {
   padding: 3rem 1rem;
   padding-bottom: 6rem;
 
-  position: fixed;
-  bottom: 0;
   width: 100%;
   color: #fff;
 }

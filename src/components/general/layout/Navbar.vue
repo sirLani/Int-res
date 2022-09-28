@@ -10,13 +10,13 @@
           <li class="nav-item">Explore</li>
           <li class="nav-item">
             Featured Collections
-            <img src="../../assets/Icon-awesome-caret-down.svg" />
+            <img src="../../../assets/Icon-awesome-caret-down.svg" />
           </li>
         </div>
         <div class="nav-section">
           <li class="nav-item right">How It Works</li>
           <li class="nav-item">about Risidio</li>
-          <li class="nav-item">My NFTs</li>
+          <li class="nav-item myNFT">My NFTs</li>
         </div>
       </ul>
     </div>
@@ -86,5 +86,19 @@ export default {
   height: 100px;
   object-fit: cover;
   z-index: -11;
+}
+
+.myNFT {
+  background: rgba(254, 255, 255, 0.3);
+  color: #5fbdc1;
+  border: none;
+  padding: 10px 30px;
+  margin: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
 }
 </style>
