@@ -211,8 +211,6 @@ nav {
   }
   .drawer-close {
     display: flex;
-    margin-right: 7px;
-    margin-bottom: 2rem;
   }
   nav {
     width: 100vw;
