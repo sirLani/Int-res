@@ -6,7 +6,7 @@
       <p class="name">Artist name</p>
     </div>
   </div>
-  <div class="about">
+  <div class="about" :class="{ show: show.active }">
     <p>
       Description of the NFT / collectable - Examples such the content of NFTs,
       specific themes of the collection, quotations by the creator, the meaning
@@ -21,7 +21,8 @@
       creation of this collection etc
     </p>
   </div>
-  <p class="toggle">Read More</p>
+  <p @click="toggle()" v-if="show.active == false" class="toggle">read more</p>
+  <p @click="toggle()" v-else class="toggle">show less</p>
 
   <div class="details">
     <div class="details-item">
@@ -45,10 +46,22 @@ export default {
 
   data() {
     return {
+      show: {
+        active: false,
+      },
+
       profilePicture:
         "https://res.cloudinary.com/dagzxzuv0/image/upload/v1664275167/Groupe_17728_fuiflf.png",
     };
   },
+
+  methods: {
+    toggle() {
+      this.show.active = !this.show.active;
+    },
+  },
+
+  Generate: {},
   components: {},
 };
 </script>
@@ -89,12 +102,16 @@ h1 {
 }
 
 .about {
-  max-height: 51px;
+  height: 51px;
   overflow: hidden;
   text-align: center;
   max-width: 36rem;
   margin: 0 auto;
   margin-top: 8rem;
+
+  &.show {
+    height: auto;
+  }
 }
 
 .toggle {
