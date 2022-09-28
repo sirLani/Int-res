@@ -112,6 +112,11 @@ h1 {
   &.show {
     height: auto;
   }
+
+  p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .toggle {
@@ -166,6 +171,18 @@ h1 {
     .details-item:last-child {
       border-bottom: 0;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-picture {
+    left: 42%;
+  }
+}
+
+@media (max-width: 425px) {
+  .profile-picture {
+    left: 38%;
   }
 }
 </style>

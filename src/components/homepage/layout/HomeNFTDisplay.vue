@@ -3,7 +3,7 @@
   <!-- Here you will see conditional rendering separating between mobile Nfts and normal. You may use your own logic for displaying the nfts between the mobile view and desktop-->
   <div class="container NFT-section">
     <div class="toggle-nav">
-      <div class="toggle">Items</div>
+      <div class="toggle active">Items</div>
       <div class="toggle">Activity</div>
     </div>
 
@@ -189,7 +189,7 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style scoped lang=scss>
 .toggle-nav {
   width: 97%;
   border-bottom: 1px solid #f0eaea;
@@ -203,6 +203,11 @@ export default {
   padding: 1rem 2rem;
   font-size: 13px;
   font-weight: 500;
+
+  &.active {
+    border-bottom: 1px solid #50b1b5;
+    color: #50b1b5;
+  }
 }
 
 .NFT-section {
