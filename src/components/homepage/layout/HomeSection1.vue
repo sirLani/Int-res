@@ -54,7 +54,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang=scss>
 h1 {
   color: #ffffff;
   font-weight: 300;
@@ -130,5 +130,25 @@ h1 {
 .details-sub {
   font-weight: 500;
   margin-top: 15px;
+}
+
+@media (max-width: 614px) {
+  .details {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    padding: 1rem 1rem;
+
+    .details-item {
+      border-left: none;
+      border-bottom: 1px solid #f0eaea;
+      padding: 1.5rem 0;
+    }
+
+    .details-item:last-child {
+      border-bottom: 0;
+    }
+  }
 }
 </style>

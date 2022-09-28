@@ -4,21 +4,34 @@ import { createRouter, createWebHistory } from "vue-router";
 // That said, we appreciate the curiosity
 
 // Views
-import Homepage from '../views/Homepage'
-
+import Homepage from "../views/Homepage";
+import Explorepage from "../views/ExplorePage.vue";
+import PageNotFoundPage from "../views/PageNotFoundPage.vue";
 
 const routes = [
-    {
-    path: '/',
-    name: 'home',
+  {
+    path: "/",
+    name: "home",
     component: Homepage,
-    meta: { title: 'Home - Risidio' }
-    }
-]
+    meta: { title: "Home - Risidio" },
+  },
+
+  {
+    path: "/explore",
+    name: "explore",
+    component: Explorepage,
+    meta: { title: "Explore" },
+  },
+  {
+    path: "/:catchAll(.*)*",
+    name: "PageNotFound",
+    component: PageNotFoundPage,
+  },
+];
 
 const router = createRouter({
-    history: createWebHistory(),
-    routes
-})
+  history: createWebHistory(),
+  routes,
+});
 
 export default router;

@@ -44,7 +44,7 @@ export default {
   methods: {},
 };
 </script>
-<style scoped>
+<style scoped lang=scss>
 .footer {
   background-color: #5154a1;
   display: flex;
@@ -100,5 +100,23 @@ export default {
   margin-top: 5px;
   font-size: 12px;
   font-weight: 500;
+}
+
+@media (max-width: 884px) {
+  .footer-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 644px) {
+  .options {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .section {
+      margin-bottom: 1rem;
+    }
+  }
 }
 </style>

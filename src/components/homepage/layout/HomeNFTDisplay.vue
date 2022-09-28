@@ -31,7 +31,8 @@
     <div class="gallery-btn-container">
       <p>You’ve seen the all collection</p>
       <div class="gallery-btn">
-        <Button text="Gallery" backgroundColor="#5FBDC1" /><Button
+        <Button text="Gallery" backgroundColor="#5FBDC1" />
+        <Button
           text="Go Back TO Top"
           color="#5FBDC1"
           backgroundColor="#EFF8F8"
@@ -249,5 +250,17 @@ export default {
 
 .gallery-btn-container p {
   font-size: 20px;
+}
+
+@media (max-width: 568px) {
+  .mobile-NFT {
+    justify-content: center;
+  }
+
+  .gallery-btn {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 </style>
