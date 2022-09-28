@@ -250,7 +250,7 @@ nav {
     margin-right: 2rem;
     padding-bottom: 2rem;
     font-size: 13px;
-    line-height: 1.6;
+    line-height: 3.6;
   }
   .top {
     border-bottom: 1px solid rgba(254, 255, 255, 0.3);
